@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahesh C I – Information Science Engineering Student at VVCE Mysuru. Turning ideas into visual stories through code, IoT, and modern web development." />
+  <meta name="keywords" content="Mahesh C I, portfolio, ISE student, VVCE, web developer, IoT, Python, JavaScript" />
+  <meta name="author" content="Mahesh C I" />
+  <meta property="og:title" content="Mahesh C I – Portfolio" />
+  <meta property="og:description" content="Turning Ideas into Visual Stories." />
+  <meta property="og:type" content="website" />
+  <title>Mahesh C I | ISE Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Devicons for tech icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- Font Awesome for general icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========== ANIMATED BACKGROUND ========== -->
+<div class="bg-animate">
+  <div class="bg-orb"></div>
+  <div class="bg-orb"></div>
+  <div class="bg-orb"></div>
+</div>
+<canvas id="particles-canvas"></canvas>
+
+<!-- ========== CUSTOM CURSOR ========== -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo">Mahesh&nbsp;C&nbsp;I</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"        class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills"       class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects"     class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#achievements" class="nav-link" id="nav-achievements">Achievements</a></li>
+        <li><a href="#contact"      class="nav-link" id="nav-contact">Contact</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav-link nav-cta" id="nav-resume">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <a href="#about"        class="mob-link" id="mob-about">About</a>
+  <a href="#skills"       class="mob-link" id="mob-skills">Skills</a>
+  <a href="#projects"     class="mob-link" id="mob-projects">Projects</a>
+  <a href="#achievements" class="mob-link" id="mob-achievements">Achievements</a>
+  <a href="#contact"      class="mob-link" id="mob-contact">Contact</a>
+  <a href="resume.pdf" download id="mob-resume">
+    <i class="fa-solid fa-download"></i> Resume
+  </a>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left: Content -->
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="line"></span>
+          Hello, World! 👋 I'm
+        </div>
+
+        <h1 class="hero-name" id="hero-heading">
+          Mahesh<br />
+          <span class="gradient-text">C I</span>
+        </h1>
+
+        <p class="hero-tagline">"Turning Ideas into Visual Stories."</p>
+
+        <p class="hero-desc">
+          An enthusiastic <strong>Information Science Engineering</strong> student at VVCE Mysuru,
+          passionate about building smart, beautiful digital experiences — from IoT systems
+          to elegant web interfaces.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary" id="hero-view-work">
+            <i class="fa-solid fa-rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline" id="hero-contact">
+            <i class="fa-solid fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">9.3</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="hero-visual reveal-right">
+        <div class="avatar-ring-container">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-2"></div>
+          <div class="avatar-core">
+            <span class="avatar-initials">MCI</span>
+            <span class="avatar-role">ISE Student<br />VVCE Mysuru</span>
+          </div>
+        </div>
+
+        <div class="floating-badges">
+          <div class="badge"><i class="devicon-python-plain"></i> Python</div>
+          <div class="badge">🔌 IoT Dev</div>
+          <div class="badge"><i class="devicon-javascript-plain"></i> JS</div>
+          <div class="badge">🤖 ML</div>
+        </div>
+      </div>
+
+    </div><!-- /.hero-grid -->
+  </div><!-- /.container -->
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left Card -->
+      <div class="glass-card about-card reveal-left">
+        <div class="about-icon-row">
+          <div class="icon-bubble">👨‍💻</div>
+        </div>
+        <div class="about-name">Mahesh C I</div>
+        <div class="about-role">🎓 B.E. – Information Science Engineering</div>
+        <div class="about-divider"></div>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Kukarhalli, Karnataka, India</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <a href="mailto:maheshchandrashekar179@gmail.com" style="color:var(--text-secondary)">
+              maheshchandrashekar179@gmail.com
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+            <a href="https://linkedin.com/in/mahesh-c-154433385" target="_blank" rel="noopener" style="color:var(--text-secondary)">
+              linkedin.com/in/mahesh-c-154433385
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="icon"><i class="fa-brands fa-github"></i></span>
+            <a href="https://github.com/maheshchandrashekar26" target="_blank" rel="noopener" style="color:var(--text-secondary)">
+              github.com/maheshchandrashekar26
+            </a>
+          </div>
+        </div>
+
+        <div class="about-divider"></div>
+        <a href="resume.pdf" download class="btn btn-primary" id="about-resume" style="width:100%;justify-content:center;margin-top:8px;">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- Right Content -->
+      <div class="about-right">
+        <div class="section-tag reveal">About Me</div>
+        <h2 class="section-title reveal" id="about-heading">
+          Who Is <span>Mahesh?</span>
+        </h2>
+
+        <div class="about-text-block reveal">
+          <h3>My Story 🌊</h3>
+          <p>
+            I'm a first-year B.E. student in Information Science and Engineering at
+            Vivekananda Vidyavardhaka College of Engineering (VVCE), Mysuru. With a passion
+            for technology and creativity, I believe every great idea deserves a beautiful,
+            functional implementation.
+          </p>
+        </div>
+
+        <div class="about-text-block reveal">
+          <h3>What Drives Me 🚀</h3>
+          <p>
+            From building smart IoT solutions that save energy to learning the art of web development,
+            I'm constantly pushing my boundaries. I love exploring the intersection of hardware
+            and software — where molecules meet bits and real-world impact is created.
+          </p>
+        </div>
+
+        <!-- Education Card -->
+        <div class="glass-card edu-card reveal">
+          <div class="edu-degree">Bachelor of Engineering – Information Science & Engineering</div>
+          <div class="edu-college">🏛️ VVCE Mysuru, Karnataka</div>
+          <div class="edu-meta">
+            <span><i class="fa-regular fa-calendar"></i> 2024 – 2028</span>
+            <span class="cgpa-badge"><i class="fa-solid fa-star"></i> CGPA: 9.3 / 10</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ========== SKILLS SECTION ========== -->
+<section id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <div class="section-tag reveal">My Skills</div>
+      <h2 class="section-title reveal" id="skills-heading">
+        Tools &amp; <span>Technologies</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto;">
+        A curated toolkit I use to build, prototype, and ship innovative solutions.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon blue"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-cat-name">Programming Languages</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="devicon-python-plain" style="color:#3776ab"></i> Python</span>
+          <span class="skill-pill"><i class="devicon-java-plain" style="color:#f89820"></i> Java</span>
+          <span class="skill-pill"><i class="devicon-c-plain" style="color:#a8b9cc"></i> C</span>
+          <span class="skill-pill"><i class="devicon-cplusplus-plain" style="color:#00599c"></i> C++</span>
+          <span class="skill-pill"><i class="devicon-javascript-plain" style="color:#f7df1e"></i> JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Web Dev -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon cyan"><i class="fa-solid fa-globe"></i></div>
+          <div class="skill-cat-name">Web Development</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="devicon-html5-plain" style="color:#e34f26"></i> HTML5</span>
+          <span class="skill-pill"><i class="devicon-css3-plain" style="color:#264de4"></i> CSS3</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon purple"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-cat-name">Databases</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="devicon-mysql-plain" style="color:#4479a1"></i> MySQL</span>
+          <span class="skill-pill"><i class="devicon-mongodb-plain" style="color:#47a248"></i> MongoDB</span>
+          <span class="skill-pill"><div class="pill-dot"></div> SQL</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon green"><i class="fa-solid fa-wrench"></i></div>
+          <div class="skill-cat-name">Tools &amp; Platforms</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill"><i class="devicon-github-plain"></i> GitHub</span>
+          <span class="skill-pill"><i class="devicon-vscode-plain" style="color:#007acc"></i> VS Code</span>
+        </div>
+      </div>
+
+      <!-- AI/ML + IoT -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon orange"><i class="fa-solid fa-microchip"></i></div>
+          <div class="skill-cat-name">AI/ML &amp; IoT</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">🤖 Machine Learning</span>
+          <span class="skill-pill">💡 Arduino</span>
+          <span class="skill-pill">📡 ESP32</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="glass-card skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon pink"><i class="fa-solid fa-users"></i></div>
+          <div class="skill-cat-name">Soft Skills</div>
+        </div>
+        <div class="soft-skill-row" id="soft-skills-bars">
+          <div class="soft-skill-item">
+            <div class="soft-skill-header">
+              <span class="soft-skill-name">Communication</span>
+              <span class="soft-skill-pct">90%</span>
+            </div>
+            <div class="soft-skill-bar"><div class="soft-skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-header">
+              <span class="soft-skill-name">Problem Solving</span>
+              <span class="soft-skill-pct">88%</span>
+            </div>
+            <div class="soft-skill-bar"><div class="soft-skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-header">
+              <span class="soft-skill-name">Teamwork</span>
+              <span class="soft-skill-pct">92%</span>
+            </div>
+            <div class="soft-skill-bar"><div class="soft-skill-fill" data-width="92"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.skills-grid -->
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ========== PROJECTS SECTION ========== -->
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <div class="section-tag reveal">My Work</div>
+      <h2 class="section-title reveal" id="projects-heading">
+        Featured <span>Projects</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto;">
+        Real-world solutions crafted with curiosity and clean code.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Smart Glow -->
+      <article class="glass-card project-card reveal" id="project-smart-glow">
+        <div class="project-header">
+          <div class="project-cat-badge">
+            <i class="fa-solid fa-microchip"></i> IoT
+          </div>
+          <h3 class="project-title">Smart Glow 💡</h3>
+          <p class="project-desc">
+            An intelligent street lighting system designed to reduce electricity consumption on highways.
+            Lights stay at low brightness by default and automatically increase when a human or vehicle
+            is detected — saving power while maintaining safety.
+          </p>
+        </div>
+
+        <div class="project-visual">
+          <span class="visual-icon">🌟</span>
+        </div>
+
+        <div class="project-body">
+          <div>
+            <div class="project-tech-label">Technologies Used</div>
+            <div class="project-tech-row">
+              <span class="tech-tag">Arduino</span>
+              <span class="tech-tag">IR Sensor</span>
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Embedded C</span>
+              <span class="tech-tag">PWM Control</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-footer">
+          <div class="project-status">
+            <div class="status-dot"></div>
+            <span style="color:var(--text-secondary)">Completed</span>
+          </div>
+          <div class="project-links">
+            <span class="project-link" title="GitHub not available">
+              <i class="fa-brands fa-github"></i> GitHub
+            </span>
+            <span class="project-link" title="Live demo not available">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Placeholder: Coming Soon -->
+      <article class="glass-card project-card reveal" id="project-coming-soon" style="opacity:0.65;">
+        <div class="project-header" style="background:rgba(124,58,237,0.08);">
+          <div class="project-cat-badge" style="color:#a78bfa;border-color:rgba(167,139,250,0.3);background:rgba(167,139,250,0.1);">
+            <i class="fa-solid fa-code"></i> Web Dev
+          </div>
+          <h3 class="project-title">More Projects Coming…</h3>
+          <p class="project-desc">
+            Currently building my next project. Stay tuned — exciting things are in the pipeline! 🚀
+          </p>
+        </div>
+        <div class="project-visual" style="border-color:rgba(167,139,250,0.2);">
+          <span class="visual-icon">🔨</span>
+        </div>
+        <div class="project-body">
+          <div>
+            <div class="project-tech-label">In Progress</div>
+            <div class="project-tech-row">
+              <span class="tech-tag" style="border-color:rgba(167,139,250,0.3);color:#c4b5fd;">Python</span>
+              <span class="tech-tag" style="border-color:rgba(167,139,250,0.3);color:#c4b5fd;">JavaScript</span>
+              <span class="tech-tag" style="border-color:rgba(167,139,250,0.3);color:#c4b5fd;">ML</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-footer">
+          <div class="project-status">
+            <div class="status-dot" style="background:#f59e0b;box-shadow:0 0 8px #f59e0b;"></div>
+            <span style="color:var(--text-secondary)">In Progress</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ========== ACHIEVEMENTS SECTION ========== -->
+<section id="achievements" aria-labelledby="achievements-heading">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <div class="section-tag reveal">Highlights</div>
+      <h2 class="section-title reveal" id="achievements-heading">
+        Achievements &amp; <span>Certifications</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto;">
+        Milestones that mark my journey in tech and beyond.
+      </p>
+    </div>
+
+    <div class="achievements-grid">
+
+      <!-- Hackathon -->
+      <div class="glass-card achievement-card reveal" id="achievement-infothon">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-type">Hackathon</div>
+        <div class="achievement-title">Infothon – National Level Hackathon</div>
+        <div class="achievement-desc">
+          Participated in Infothon, a prestigious national-level hackathon, contributing as a
+          <strong>Coordinator and Volunteer</strong>. Gained hands-on experience in event management,
+          technical problem-solving under pressure, and cross-team collaboration.
+        </div>
+        <div class="achievement-badge">
+          <i class="fa-solid fa-medal"></i> National Level Participant
+        </div>
+      </div>
+
+      <!-- Certification 1 -->
+      <div class="glass-card achievement-card reveal" id="achievement-cert-python">
+        <div class="achievement-icon">🐍</div>
+        <div class="achievement-type">Certification</div>
+        <div class="achievement-title">Python Programming Fundamentals</div>
+        <div class="achievement-desc">
+          Completed a comprehensive certification covering Python basics, data structures,
+          file I/O, and introductory algorithms — building a strong foundation in programming.
+        </div>
+        <div class="achievement-badge">
+          <i class="fa-solid fa-certificate"></i> Certified
+        </div>
+      </div>
+
+      <!-- Certification 2 -->
+      <div class="glass-card achievement-card reveal" id="achievement-cert-ml">
+        <div class="achievement-icon">🤖</div>
+        <div class="achievement-type">Certification</div>
+        <div class="achievement-title">Introduction to Machine Learning</div>
+        <div class="achievement-desc">
+          Earned a certification in ML fundamentals, exploring supervised learning,
+          model evaluation, and real-world datasets through hands-on exercises.
+        </div>
+        <div class="achievement-badge">
+          <i class="fa-solid fa-certificate"></i> Certified
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications Row -->
+    <h3 class="section-title reveal" style="font-size:1.5rem;margin-top:64px;margin-bottom:8px;">
+      Skill <span>Badges</span>
+    </h3>
+    <div class="certs-grid">
+      <div class="glass-card cert-card reveal" id="cert-iot">
+        <div class="cert-icon">💡</div>
+        <div class="cert-info">
+          <div class="cert-name">IoT Fundamentals</div>
+          <div class="cert-issuer">Arduino / Self-Study</div>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal" id="cert-web">
+        <div class="cert-icon">🌐</div>
+        <div class="cert-info">
+          <div class="cert-name">Web Development</div>
+          <div class="cert-issuer">HTML + CSS + JS</div>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal" id="cert-db">
+        <div class="cert-icon">🗄️</div>
+        <div class="cert-info">
+          <div class="cert-name">Database Management</div>
+          <div class="cert-issuer">MySQL / SQL</div>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal" id="cert-git">
+        <div class="cert-icon">🐙</div>
+        <div class="cert-info">
+          <div class="cert-name">Git &amp; GitHub</div>
+          <div class="cert-issuer">Version Control</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <div class="section-tag reveal">Let's Connect</div>
+      <h2 class="section-title reveal" id="contact-heading">
+        Get In <span>Touch</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto;">
+        Have a project in mind, a question, or just want to say hello? My inbox is open!
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <div class="glass-card contact-info-card reveal-left">
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <div class="label">Email</div>
+              <a href="mailto:maheshchandrashekar179@gmail.com" class="value">
+                maheshchandrashekar179@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-info-text">
+              <div class="label">Location</div>
+              <span class="value">Kukarhalli, Karnataka, India</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="contact-info-text">
+              <div class="label">College</div>
+              <span class="value">VVCE Mysuru, Karnataka</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="reveal-left" style="transition-delay:0.1s;">
+          <p style="font-size:0.85rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;">
+            Find me on
+          </p>
+          <div class="social-links-grid">
+            <a href="https://linkedin.com/in/mahesh-c-154433385" target="_blank" rel="noopener"
+               class="social-link-btn" id="social-linkedin">
+              <span class="soc-icon"><i class="fa-brands fa-linkedin"></i></span>
+              LinkedIn
+            </a>
+            <a href="https://github.com/maheshchandrashekar26" target="_blank" rel="noopener"
+               class="social-link-btn" id="social-github">
+              <span class="soc-icon"><i class="fa-brands fa-github"></i></span>
+              GitHub
+            </a>
+            <a href="mailto:maheshchandrashekar179@gmail.com"
+               class="social-link-btn" id="social-email">
+              <span class="soc-icon"><i class="fa-solid fa-envelope"></i></span>
+              Email Me
+            </a>
+            <a href="resume.pdf" download
+               class="social-link-btn" id="social-resume">
+              <span class="soc-icon"><i class="fa-solid fa-file-pdf"></i></span>
+              Resume
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="glass-card contact-form-card reveal-right" id="contact-form-card">
+        <h3 class="form-title">Send a Message ✉️</h3>
+        <p class="form-subtitle">Fill out the form and I'll get back to you within 24 hours.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Full Name</label>
+              <input type="text" id="form-name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-subject">Subject</label>
+            <select id="form-subject" name="subject">
+              <option value="">Select a topic…</option>
+              <option value="collaboration">Collaboration / Project</option>
+              <option value="internship">Internship Opportunity</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Just Saying Hi!</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" placeholder="Write your message here…" required></textarea>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary" id="contact-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <span class="form-note">🔒 Your info is safe with me.</span>
+          </div>
+
+          <div id="form-success">
+            <i class="fa-solid fa-circle-check"></i>
+            Message received! I'll reply within 24 hours. 🎉
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">Mahesh C I</div>
+      <div class="footer-copy">
+        Crafted with <span>💙</span> by Mahesh C I · &copy; <span id="footer-year"></span>
+      </div>
+      <div class="footer-links">
+        <a href="#hero" id="footer-home">Home</a>
+        <a href="#projects" id="footer-projects">Projects</a>
+        <a href="#contact" id="footer-contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back To Top -->
+<button id="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
